@@ -14,6 +14,7 @@ public class Parser {
     private Token peekToken;
     private StringBuilder xmlOutput = new StringBuilder();
     private String className;
+    private VMWriter vmWriter = new VMWriter();
 
     public Parser(byte[] input) {
         scan = new Scanner(input);
